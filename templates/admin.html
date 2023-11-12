@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block section%}
+    <form>
+        <label for="name">Movie name name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="director">Director:</label>
+        <input type="text" id="director" name="director"><br><br>
+        <label for="date">Date of Release:</label>
+        <input type="text" id="date" name="date"><br><br>
+        <label for="genre">Genre :</label>
+        <input type="text" id="genre" name="genre"><br><br>
+        <label for="image">Link to the Poster:</label>
+        <input type="text" id="image" name="image"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if inp %}
+        <h5>Movie Added!!</h5>
+    {% endif %}
+{% endblock %}

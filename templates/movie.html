@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block section %} 
+    <div style="text-align: center; margin: 0 auto;">
+        <img src="{{movie.image}}" alt="{{movie.name}} image" style="max-width: 25%; max-height: auto;">
+        <h2>Name: {{movie.name}}</h2>
+        <h2>Director: {{movie.director}}</h2>
+        <h2>Date of Release: {{movie.date}}</h2>
+        <h2>Genre: {{movie.genre}}</h2>
+    </div>
+{% endblock %}
