@@ -43,5 +43,5 @@ def add_data():
     movies_df = pd.concat([old_movie_df, new_movie_df], ignore_index=True)
     movies_df.to_excel(movie_data, index=False)
 
-    return render_template('admin.html', inp=False)
+    return render_template('admin.html', inp=True)
     
